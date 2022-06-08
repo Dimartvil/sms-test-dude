@@ -3,7 +3,7 @@ const exphbs = require("express-handlebars");
 const app = express();
 const path = require("path");
 const morgan = require("morgan");
-
+require('dotenv').config();
 
 app.set("port", process.env.PORT || 4500);
 app.set('views',path.join(__dirname, 'views'));
